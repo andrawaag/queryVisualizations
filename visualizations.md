@@ -1,5 +1,0 @@
-<iframe
-  width="100%"
-  height="500"
-  src="https://query.wikidata.org/embed.html#SELECT%20%3Fvoornaam%20(COUNT(%3Fitem)%20AS%20%3Faantal)%20WHERE%20%7B%20%3Fitem%20p%3AP3602%20%3Fnode.%20%3Fnode%20ps%3AP3602%20wd%3AQ123684991.%20%3Fitem%20rdfs%3Alabel%20%3Flabel.%20FILTER%20(LANG(%3Flabel)%20%3D%20%22nl%22)%20BIND(STRAFTER(CONCAT(%22%20%22%2C%20%3Flabel)%2C%20%22%20%22)%20AS%20%3Fna_label)%20BIND(STRBEFORE(%3Fna_label%2C%20%22%20%22)%20AS%20%3Fvoornaam_raw)%20BIND(STR(%3Fvoornaam_raw)%20AS%20%3Fvoornaam)%20FILTER(STRLEN(%3Fvoornaam)%20%3E%201)%7D%20GROUP%20BY%20%3Fvoornaam%20ORDER%20BY%20DESC(%3Faantal)%20LIMIT%2020">
-</iframe>
